@@ -1098,9 +1098,9 @@ function ContactLink({ icon: Icon, label, href }) {
    ============================================================ */
 function HeroPhoto({ src, name }) {
   const [err, setErr] = useState(false);
-  // Radial mask softly dissolves the photo edges into the page background
+  // Radial mask dissolves the photo edges into the page background
   const mask =
-    'radial-gradient(ellipse 72% 72% at 55% 42%, #000 48%, transparent 100%)';
+    'radial-gradient(ellipse 66% 66% at 55% 40%, #000 32%, transparent 92%)';
 
   if (err || !src) {
     return (
@@ -1131,6 +1131,16 @@ function HeroPhoto({ src, name }) {
         className="w-full h-auto object-cover select-none"
         style={{ WebkitMaskImage: mask, maskImage: mask }}
         draggable={false}
+      />
+      {/* Gradient overlay marries the photo into the dark theme (slate-950) */}
+      <div
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            'linear-gradient(to bottom, rgba(2,6,23,0) 50%, rgba(2,6,23,0.95) 100%), linear-gradient(to right, rgba(2,6,23,0.55) 0%, rgba(2,6,23,0) 32%)',
+          WebkitMaskImage: mask,
+          maskImage: mask,
+        }}
       />
     </div>
   );
