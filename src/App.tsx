@@ -35,16 +35,17 @@ const CONFIG = {
   name: 'Jonathan',
   lastName: 'Aguilera',
   title:
-    'AI Automation Specialist · n8n Developer · Workflow Automation Engineer',
+    'AI Automation Engineer · n8n Developer · Workflow Architect',
   tagline:
-    'I help businesses save time and increase productivity by building AI-powered automation systems, integrating APIs, and creating intelligent workflows with n8n and modern AI.',
+    'I build AI-powered systems that do the work your team keeps redoing — lead handling, follow-ups, scheduling, and back-office ops — running 24/7 so nothing falls through the cracks.',
   email: 'jonaguilera101@gmail.com',
   location: 'Batangas, Philippines',
+  photo: '/profile.png', // drop your photo into the public/ folder as profile.png
   links: {
-    linkedin: 'https://linkedin.com/in/yourprofile',
-    github: 'https://github.com/yourprofile',
-    upwork: 'https://upwork.com/freelancers/yourprofile',
-    whatsapp: 'https://wa.me/63XXXXXXXXXX',
+    linkedin: 'https://www.linkedin.com/in/jonaguilera',
+    github: 'https://github.com/jonaguilera101-glitch',
+    upwork: 'https://www.upwork.com/freelancers/~010e77abd9d483b7c2',
+    whatsapp: 'https://wa.me/639625867172',
   },
   chatWebhookUrl:
     'https://purple-crane.pikapod.net/webhook/1e507edd-5e75-4f03-b101-4d28be47d448',
@@ -54,9 +55,9 @@ const PER_PAGE = 4;
 
 const stats = [
   { value: '24/7', label: 'Automations that never sleep' },
-  { value: 'Hours', label: 'saved every week per client' },
-  { value: '13+', label: 'Real workflows shipped' },
-  { value: 'End-to-End', label: 'Built, deployed & maintained' },
+  { value: '10+ hrs', label: 'Saved every week per workflow' },
+  { value: '13+', label: 'Workflows built end-to-end' },
+  { value: 'End-to-End', label: 'Designed, deployed & maintained' },
 ];
 
 const services = [
@@ -102,16 +103,49 @@ const services = [
   },
 ];
 
+const process = [
+  {
+    step: '01',
+    title: 'Discovery',
+    desc: 'We map the process you want gone and pinpoint exactly where the time leaks.',
+  },
+  {
+    step: '02',
+    title: 'Build',
+    desc: 'I architect and build the workflow end-to-end, with logging and error handling baked in.',
+  },
+  {
+    step: '03',
+    title: 'Deploy',
+    desc: 'It goes live on your stack — cloud or self-hosted — and is tested against real data.',
+  },
+  {
+    step: '04',
+    title: 'Handoff',
+    desc: 'You get documentation and a system that just runs. Ongoing support if you want it.',
+  },
+];
+
 const experience = [
   {
-    role: 'AI Automation Specialist',
+    role: 'AI Automation Engineer',
     company: 'Freelance / Self-Employed',
-    period: 'April 2026 – Present',
+    period: 'May 2026 – Present',
     points: [
       'Build end-to-end automation workflows using n8n, Make.com, Zapier, and GoHighLevel.',
       'Delivered a paid lead-enrichment and automated email outreach system: validation, deduplication, API enrichment, personalized sending, and execution logging.',
       'Support HR clients with automated lead follow-up, scheduling, and document workflows.',
       'Integrate APIs, webhooks, and AI tools (OpenAI, Claude, DeepSeek) to connect business systems.',
+    ],
+  },
+  {
+    role: 'Operations & Business Support',
+    company: 'Independent',
+    period: '2021 – 2025',
+    points: [
+      'Supported HR operations for a recruitment team — email drafting, inbox screening, and document coordination.',
+      'Managed repetitive, manual processes firsthand across daily operations — the exact work that shaped my move into automation.',
+      'Brought an engineering and quality-management background to process improvement and structured problem-solving.',
     ],
   },
   {
@@ -147,8 +181,8 @@ const platformProjects = [
     items: [
       {
         title: 'AI Real Estate Lead Management & Sales Automation',
-        tag: 'Build',
-        desc: 'End-to-end capture, AI qualification (Hot / Warm / Cold), automated follow-up sequences, and live CRM updates.',
+        tag: 'System Design',
+        desc: 'Every lead qualified in seconds and pushed into follow-up automatically — so nothing goes cold while you sleep. Hot / Warm / Cold AI scoring, live CRM sync, and WhatsApp + email sequences, fully hands-off.',
         img: '/workflows/real-estate-lead-management.png',
         details: {
           overview:
@@ -171,7 +205,7 @@ const platformProjects = [
       {
         title: 'Lead Enrichment for Drivers & Scraping',
         tag: 'Client Project',
-        desc: 'Paid system: pulls leads from a client Google Sheet, validates, deduplicates, enriches via APIs, and sends personalized emails with full logging.',
+        desc: 'A live, paid system delivered for a client: pulls raw leads from a Google Sheet, validates and deduplicates them, enriches every record via API, and sends personalized outreach — with full logging so nothing silently fails.',
         img: '/workflows/lead-enrichment.png',
         details: {
           overview:
@@ -192,8 +226,8 @@ const platformProjects = [
       },
       {
         title: 'AI Medical Receptionist (RAG)',
-        tag: 'Build',
-        desc: 'RAG knowledge engine, Telegram patient interaction, intent-based routing, appointment management, reminders, and admin alerts.',
+        tag: 'System Design',
+        desc: "Handles patient questions, booking, reminders, and admin alerts around the clock — trained on the clinic's own data, so it answers like staff, not a generic bot.",
         img: '/workflows/ai-medical-receptionist.png',
         details: {
           overview:
@@ -208,8 +242,8 @@ const platformProjects = [
       },
       {
         title: 'AI Clinic Receptionist (Voice)',
-        tag: 'Build',
-        desc: 'Vapi-powered booking, rescheduling, cancellations, reminders, and post-visit follow-ups for clinics.',
+        tag: 'System Design',
+        desc: 'Answers the phone, books and reschedules appointments, checks availability live, and follows up — a voice AI that never misses a call.',
         img: '/workflows/ai-clinic-receptionist.png',
         details: {
           overview:
@@ -231,7 +265,7 @@ const platformProjects = [
       },
       {
         title: 'AI Fleet Maintenance & Compliance',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'Proactive maintenance, regulatory compliance tracking, technician task creation, and reporting through an AI operations hub.',
         img: '/workflows/fleet-maintenance.png',
         details: {
@@ -254,7 +288,7 @@ const platformProjects = [
       },
       {
         title: 'AI Customer Support Automation Platform',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'An AI helpdesk on n8n with 8 interconnected workflows: tickets, SLA escalations, follow-ups, daily reporting, ticket reopening, and AI priority routing.',
         img: '/workflows/ai-customer-support.png',
         details: {
@@ -276,7 +310,7 @@ const platformProjects = [
       },
       {
         title: 'Facebook Chat Support & Booking Automation',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'AI-powered n8n workflow that handles Facebook messages, qualifies leads, books appointments, and sends Gmail confirmations.',
         img: '/workflows/facebook-chat-booking.png',
         details: {
@@ -299,7 +333,7 @@ const platformProjects = [
       },
       {
         title: 'YouTube & Facebook AI Reels Creator',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'Fully automated content engine that writes scripts with AI, renders videos, and publishes Reels to YouTube and Facebook on a schedule.',
         img: '/workflows/youtube-facebook-reels.png',
         details: {
@@ -332,7 +366,7 @@ const platformProjects = [
     items: [
       {
         title: 'AI-Powered Client Lifecycle Automation',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'Automates client onboarding, follow-ups, and project management across Asana, Zapier, AI, and Google Workspace.',
         img: '/workflows/zapier-client-lifecycle.png',
         details: {
@@ -348,7 +382,7 @@ const platformProjects = [
       },
       {
         title: 'AI Video Content Repurposing & Social Publishing',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'Detects new video uploads, generates AI transcriptions and blog posts, and publishes to Facebook and LinkedIn automatically.',
         img: '/workflows/zapier-video-repurposing.png',
         details: {
@@ -380,7 +414,7 @@ const platformProjects = [
     items: [
       {
         title: 'AI Email Generation & File Analysis Automation',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'Processes incoming email attachments, generates AI content, stores results in Google Drive, logs to Sheets, and sends follow-up emails.',
         img: '/workflows/make-email-file-analysis.png',
         details: {
@@ -402,7 +436,7 @@ const platformProjects = [
       },
       {
         title: 'Asana-to-Xero Financial Reporting & Task Completion',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'Connects Asana, Xero, and Google Sheets to capture completed tasks, retrieve invoice data, aggregate reports, and attach them back in Asana.',
         img: '/workflows/make-asana-xero-reporting.png',
         details: {
@@ -428,7 +462,7 @@ const platformProjects = [
     items: [
       {
         title: 'Car Detailing Booking & Reminder Automation',
-        tag: 'Build',
+        tag: 'System Design',
         desc: 'Automated follow-up and reminder workflow for car detailing — booking, confirmations, AI voice calls, reschedules, and team alerts.',
         img: '/workflows/ghl-car-detailing.png',
         details: {
@@ -474,15 +508,9 @@ const techStack = [
 const testimonials = [
   {
     quote:
-      'The automation system handled our lead follow-up end to end. It freed up real hours every week.',
+      'The automation handled our lead follow-up end to end. It freed up real hours every week.',
     author: 'HR Client',
     role: 'Recruitment & Staffing',
-  },
-  {
-    quote:
-      'Reliable, process-driven, and easy to work with. The workflows just run.',
-    author: 'Future Review',
-    role: 'Your testimonial here',
   },
 ];
 
@@ -1066,6 +1094,49 @@ function ContactLink({ icon: Icon, label, href }) {
 }
 
 /* ============================================================
+   Hero photo — edges fade into the dark background
+   ============================================================ */
+function HeroPhoto({ src, name }) {
+  const [err, setErr] = useState(false);
+  // Radial mask softly dissolves the photo edges into the page background
+  const mask =
+    'radial-gradient(ellipse 72% 72% at 55% 42%, #000 48%, transparent 100%)';
+
+  if (err || !src) {
+    return (
+      <div className="relative aspect-[4/5] w-full max-w-sm mx-auto">
+        <div
+          className="absolute inset-0 bg-gradient-to-br from-blue-600/30 via-cyan-500/10 to-transparent flex items-center justify-center"
+          style={{ WebkitMaskImage: mask, maskImage: mask }}
+        >
+          <div className="text-center px-6">
+            <span className="text-slate-500 text-xs font-mono">
+              {src || '/profile.png'}
+            </span>
+            <p className="text-[10px] text-slate-600 mt-1">
+              drop your photo into the public/ folder
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="relative w-full max-w-sm mx-auto">
+      <img
+        src={src}
+        alt={name}
+        onError={() => setErr(true)}
+        className="w-full h-auto object-cover select-none"
+        style={{ WebkitMaskImage: mask, maskImage: mask }}
+        draggable={false}
+      />
+    </div>
+  );
+}
+
+/* ============================================================
    Main
    ============================================================ */
 export default function App() {
@@ -1089,6 +1160,7 @@ export default function App() {
     ['About', 'about'],
     ['Experience', 'experience'],
     ['Services', 'services'],
+    ['Process', 'process'],
     ['Platforms', 'platforms'],
     ['Stack', 'stack'],
     ['Contact', 'contact'],
@@ -1180,7 +1252,8 @@ export default function App() {
 
       {/* HERO */}
       <header id="hero" className="relative pt-36 pb-24 px-6">
-        <div className="max-w-4xl mx-auto text-left">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-5 gap-10 items-center">
+          <div className="md:col-span-3 text-left">
           <Reveal>
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-sm mb-6">
               <Zap size={14} /> Available for automation projects
@@ -1217,6 +1290,11 @@ export default function App() {
               </button>
             </div>
           </Reveal>
+          </div>
+
+          <Reveal delay={200} className="md:col-span-2">
+            <HeroPhoto src={CONFIG.photo} name={fullName} />
+          </Reveal>
         </div>
       </header>
 
@@ -1242,13 +1320,13 @@ export default function App() {
           <Reveal className="md:col-span-3">
             <div className="space-y-4 text-slate-300 leading-relaxed">
               <p>
-                I'm an AI Automation Specialist with a background in engineering
-                and quality management. I specialize in building end-to-end
+                I'm an AI automation engineer with a background in manufacturing
+                engineering and quality management. I build end-to-end
                 automation systems that streamline operations and eliminate
                 repetitive work.
               </p>
               <p>
-                I transitioned from manufacturing engineering into automation
+                I moved from manufacturing engineering into automation
                 engineering, bringing process optimization, structured
                 problem-solving, and continuous improvement into the world of AI
                 and workflow automation.
@@ -1341,6 +1419,41 @@ export default function App() {
         </div>
       </Section>
 
+      {/* HOW I WORK */}
+      <Section id="process" title="How I Work" kicker="The process">
+        <Reveal>
+          <p className="text-slate-400 mb-10 max-w-2xl leading-relaxed">
+            From a messy manual process to a running system in four steps —
+            clear, documented, and built to keep working after handoff.
+          </p>
+        </Reveal>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {process.map((p, i) => (
+            <Reveal key={p.step} delay={(i % 4) * 80}>
+              <article className="relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 h-full hover:bg-white/[0.08] hover:border-blue-500/30 transition">
+                <span className="text-3xl font-extrabold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+                  {p.step}
+                </span>
+                <h3 className="mt-3 text-white font-semibold">{p.title}</h3>
+                <p className="mt-2 text-sm text-slate-400 leading-relaxed">
+                  {p.desc}
+                </p>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal delay={200}>
+          <div className="mt-10 flex justify-center">
+            <button
+              onClick={() => go('contact')}
+              className="px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-cyan-400 text-white font-semibold flex items-center gap-2 hover:opacity-90 transition shadow-lg shadow-blue-500/20"
+            >
+              Contact for a Quote <ChevronRight size={18} />
+            </button>
+          </div>
+        </Reveal>
+      </Section>
+
       {/* PLATFORMS */}
       <Section
         id="platforms"
@@ -1368,7 +1481,7 @@ export default function App() {
 
       {/* TESTIMONIALS */}
       <Section id="testimonials" title="Testimonials" kicker="What clients say">
-        <div className="grid md:grid-cols-2 gap-5">
+        <div className="max-w-2xl mx-auto">
           {testimonials.map((t, i) => (
             <Reveal key={i} delay={i * 90}>
               <figure className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl p-7">
